@@ -1,4 +1,11 @@
-﻿using System;
+﻿/**
+* 8/28/21
+* CSC 253
+* Adam Lancaster
+* Area Class Practice
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,7 +38,7 @@ namespace WinUI
 
 			float width,
 				  length;
-			// vars.
+			// vars. declared outside of decision struct for clarity.
 
 			if (CircleRadioButton.Checked && 
 				Double.TryParse(RadiusTextBox.Text, out radius))
