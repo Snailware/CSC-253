@@ -8,6 +8,11 @@ namespace MostFrequentCharacterClassLibrary
 {
 	public static class CharOps
 	{
+		/// <summary>
+		/// get most frequently occuring ccharacter from string.
+		/// </summary>
+		/// <param name="input">string to be parsed.</param>
+		/// <returns>most frequently occuring character.</returns>
 		public static char MostFrequent(string input)
 		{
 			string allCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
