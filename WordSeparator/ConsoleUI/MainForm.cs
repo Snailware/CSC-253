@@ -1,4 +1,11 @@
-﻿using System;
+﻿/**
+* 9/12/21
+* CSC 253
+* Adam Lancaster
+* Word Separator
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
