@@ -112,8 +112,13 @@ namespace WinUI
 		/// <param name="e"></param>
 		private void ClearButton_Click(object sender, EventArgs e)
 		{
-			OutputNumberLabel.Text = "1";
-			OutputFilePathLabel.Text = "";
+			OutputNumberLabel.ResetText();
+			OutputFilePathLabel.ResetText();
+			// reset UI.
+
+			DataModel.NumberCount = 1;
+			DataModel.FilePath = "";
+			// reset data model.
 		}
 
 		/// <summary>
