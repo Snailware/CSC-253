@@ -1,5 +1,5 @@
 ﻿
-namespace ConsoleUI
+namespace WinUI
 {
 	partial class MainForm
 	{

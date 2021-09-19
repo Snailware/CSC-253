@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{50A91A5C-D7F9-4FA3-87F0-31F1D6AA6FFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinUI", "ConsoleUI\WinUI.csproj", "{50A91A5C-D7F9-4FA3-87F0-31F1D6AA6FFD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordSeparatorClassLibrary", "WordSeparatorClassLibrary\WordSeparatorClassLibrary.csproj", "{B5341EF9-E0AB-4927-A2A4-7C4BB10968A0}"
 EndProject

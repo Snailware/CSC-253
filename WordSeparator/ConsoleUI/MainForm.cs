@@ -16,7 +16,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WordSeparatorClassLibrary;
 
-namespace ConsoleUI
+namespace WinUI
 {
 	public partial class MainForm : Form
 	{
