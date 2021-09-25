@@ -32,9 +32,11 @@ namespace WinUI
 		/// <param name="e"></param>
 		private void FileButton_Click(object sender, EventArgs e)
 		{
-			OpenFile.ShowDialog();
-			DataModel.FileName = OpenFile.FileName;
-			OutputFilePathLabel.Text = DataModel.FileName;
+			if (OpenFile.ShowDialog() == DialogResult.OK)
+			{
+				DataModel.FileName = OpenFile.FileName;
+				OutputFilePathLabel.Text = DataModel.FileName;
+			}
 		}
 
 		/// <summary>
@@ -51,20 +53,29 @@ namespace WinUI
 				// clear list of previous entries. this prevents overfilling 
 				// list via repeated read presses.
 
-				DataModel.Numbers = FileOps.ReadNumbers(DataModel.FileName);
-				foreach (int number in DataModel.Numbers)
+				string status = FileOps.ReadNumbers(DataModel.FileName, out List<int> numbers);
+				if (status == "FILE READ SUCCESSFULLY!") 
 				{
-					OutputNumbersListBox.Items.Add(number);
+					DataModel.Numbers = numbers;
+					foreach (int number in DataModel.Numbers)
+					{
+						OutputNumbersListBox.Items.Add(number);
+					}
+					// read numbers from file and add to list box.
+
+					DataModel.Sum = DataModel.Numbers.Sum();
+					OutputSumLabel.Text = DataModel.Sum.ToString();
+					// calculate sum of numbers and display.
+
+					DataModel.Count = DataModel.Numbers.Count;
+					OutputNumberCountLabel.Text = DataModel.Count.ToString();
+					// count numbers read and display.
 				}
-				// read numbers from file and add to list box.
+				else
+				{
+					MessageBox.Show(status);
+				}
 
-				DataModel.Sum = DataModel.Numbers.Sum();
-				OutputSumLabel.Text = DataModel.Sum.ToString();
-				// calculate sum of numbers and display.
-
-				DataModel.Count = DataModel.Numbers.Count;
-				OutputNumberCountLabel.Text = DataModel.Count.ToString();
-				// count numbers read and display.
 			}
 			// read file and display data if file name is specified.
 			else

@@ -76,14 +76,16 @@ namespace WinUI
 		/// <param name="e"></param>
 		private void FileButton_Click(object sender, EventArgs e)
 		{
-			SaveFile.ShowDialog();
-			// show save dialog box.
 
-			OutputFilePathLabel.Text = SaveFile.FileName;
-			// update file path label.
+			if (SaveFile.ShowDialog() == DialogResult.OK)
+			{
+				OutputFilePathLabel.Text = SaveFile.FileName;
+				// update file path label.
 
-			DataModel.FilePath = SaveFile.FileName;
-			// store path in data model.
+				DataModel.FilePath = SaveFile.FileName;
+				// store path in data model.
+			}
+			// show sav dialog. only proceed if user selects file.
 		}
 
 		/// <summary>
@@ -95,7 +97,7 @@ namespace WinUI
 		{
 			if (DataModel.FilePath != "")
 			{
-				FileOps.WriteRandomNumbers(DataModel.NumberCount, DataModel.FilePath);
+				MessageBox.Show(FileOps.WriteRandomNumbers(DataModel.NumberCount, DataModel.FilePath));
 			}
 			// write numbers to file if path isnt blank.
 			else
