@@ -1,4 +1,13 @@
-﻿using System;
+﻿/**
+* 10/3/21
+* CSC 253
+* Adam Lancaster
+* Hourly Pay Sorter
+*/
+
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
