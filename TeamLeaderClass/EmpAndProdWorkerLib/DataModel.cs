@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EmpAndProdWorkerLib
+{
+	/// <summary>
+	/// data model for program.
+	/// </summary>
+	public static class DataModel
+	{
+		/// <summary>
+		/// stored worker.
+		/// </summary>
+		public static TeamLeader Worker { get; set; }
+	}
+}
