@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfUI", "WpfUI\WpfUI.csproj", "{75D20902-B35C-44D1-A1E4-F6BCDEB2D889}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetClassLib", "PetClassLib\PetClassLib.csproj", "{40519C54-731C-4F83-9BBA-7A9C21557506}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75D20902-B35C-44D1-A1E4-F6BCDEB2D889}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75D20902-B35C-44D1-A1E4-F6BCDEB2D889}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75D20902-B35C-44D1-A1E4-F6BCDEB2D889}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75D20902-B35C-44D1-A1E4-F6BCDEB2D889}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40519C54-731C-4F83-9BBA-7A9C21557506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40519C54-731C-4F83-9BBA-7A9C21557506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40519C54-731C-4F83-9BBA-7A9C21557506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40519C54-731C-4F83-9BBA-7A9C21557506}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53EEE273-3495-4F18-9DC6-2D06B1E37B5C}
+	EndGlobalSection
+EndGlobal
